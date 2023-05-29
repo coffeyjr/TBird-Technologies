@@ -1,66 +1,98 @@
-:root {
+ :root {
     --main: #27262d;
     --accent: #FFFFFF;
     --gradient: linear-gradient(90deg, rgba(63,61,72,1) 0%, rgba(47,46,53,1) 27%, rgba(39,38,45,1) 100%);
 }
-
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    font-family: 'Jost', sans-serif;
-    color: var(--accent);
+html, body {
+    font-family: 'Nunito Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-header {
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Halant', serif;
+   }
+
+a {    
+    text-decoration: none;
+    color: #fff;
+}
+ul {
+    list-style: none;
+}
+li {
+    padding: 25px;
+    font-family: 'Nunito Sans', serif;
+}
+.container {   
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 20px;
 }
-
-ul{
+.flex {
     display: flex;
-    list-style-type: none;
+    justify-content: space-between;
     align-items: center;
+    font-size: 15px;
 }
 
-ul li a {
-    padding: 0 20px;
-    text-decoration: none;
-    color: var(--accent);
-    display: inline-block;
+.nav-content {
+    background-color:none;
+    padding: 0 15px 0;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
-
-li a::after {
+img {
+    margin-right: 700px;
+}
+.nav li a {    
+    letter-spacing: 1px;
+}
+.nav li a::after {
     content: '';
     display: block;
-    height: 1px;
+    height: 2px;
     width: 0;
     background: var(--accent);
-    transition:all .5s;
+    transition: all .5s;
 }
 
 li a:hover::after {
     width: 100%;
 }
+.nav li:last-child {
+    padding-right: 0;
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -999;
+} 
 
 main {
     display: flex;
-    /* border-top: 1px solid var(--accent); */
-    height: calc(100vh - 200px);
+    height: 100vh;
     align-items: center;
     justify-content: center;
 }
-
-/* .tbird-img{
-    max-width: 300px;
-    height: auto;
-} */
 
 .content-left {
     width: 80%;
@@ -89,6 +121,7 @@ main p {
     font-weight: 700;
     text-transform: uppercase;
     width: 40%;
+    letter-spacing: 6px;
 }
 
 .cta:hover {
@@ -98,16 +131,65 @@ main p {
     cursor: pointer;
 }
 
-  video {
-    object-fit: cover;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: -999;
-  }
+/* MEDIA QUERIES */
 
-  /*using media queries to make it responsive  */
+@media (max-width: 768px) {
+    .container .nav {
+        flex-direction: column;
+    }
+    .nav .logo {
+        margin-bottom: 10px;
+    }
+    .container .nav li {
+        padding: 1rem 1rem;
+    }
+    .container {
+        width: 100%;
+        padding-top: 85px;
+    }
+    .nav-content {
+        padding: 0 0 0;
+    }
+    video {
+        height: 100vh;
+        width: 100%;
+    }
+    img {
+        margin-right: auto;
+    }
+    .content-left {
+        width: 90%;
+    }
+    
+    main h1 {
+        font-size: 43px;
+    }
+    
+    main p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .cta {
+        padding: 15px 30px;
+        background: none;
+        color: var(--accent);
+        outline: none;
+        border: solid var(--accent);
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 90%;
+        letter-spacing: 5px;
+    }
+}
 
+@media (max-width: 500px) {
+    video {
+        height: 100vh;
+        width: 100%;
+    }
+}
+ 
+@media (max-width: 768px) {
 
-  
+}
