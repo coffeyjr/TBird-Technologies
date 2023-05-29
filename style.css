@@ -124,9 +124,9 @@ main p {
     letter-spacing: 6px;
 }
 
-.cta:hover {
+.cta:hover{
     background: var(--accent);
-    color: var(--main);
+    color: black;
     border: solid var(--main);
     cursor: pointer;
 }
