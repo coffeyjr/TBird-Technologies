@@ -222,13 +222,33 @@ body {
 .ag-services-item_bg {
   height: 128px;
   width: 128px;
-  background-color: var(--main);
+  background-color: #4F7CAC;
   z-index: 1;
   position: absolute;
   top: -75px;
   right: -75px;
   border-radius: 50%;
   transition: all 0.5s ease;
+}
+
+.ag-services_item:nth-child(2n) .ag-services-item_bg {
+  background-color: #41678A;
+}
+
+.ag-services_item:nth-child(3n) .ag-services-item_bg {
+  background-color: #3A5C79;
+}
+
+.ag-services_item:nth-child(4n) .ag-services-item_bg {
+  background-color: #335167;
+}
+
+.ag-services_item:nth-child(5n) .ag-services-item_bg {
+  background-color: #3D596E;
+}
+
+.ag-services_item:nth-child(6n) .ag-services-item_bg {
+  background-color: #466175;
 }
 
 @media only screen and (max-width: 979px) {
