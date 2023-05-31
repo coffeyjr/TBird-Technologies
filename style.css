@@ -139,6 +139,7 @@ main p {
   text-transform: uppercase;
   width: 40%;
   letter-spacing: 6px;
+  transition: ease-out 0.25s;
 }
 
 .cta:hover {
@@ -146,6 +147,7 @@ main p {
   color: black;
   border: solid var(--main);
   cursor: pointer;
+  transition: ease-in 0.25s;
 }
 
 /* LANDING-SERVICES SECTION STYLING!! */
@@ -286,7 +288,7 @@ body {
 
 .business-hours .title {
   font-size: 43px;
-  color: #BBB;
+  color: var(--accent);
   text-transform: uppercase;
   padding-left: 5px;
   border-left: 4px solid var(--cta);
@@ -310,25 +312,61 @@ body {
   background: #000;
 }
 
-.container {
+.border-top {
+  border-top: 1px solid var(--accent);
+}
+
+.footer-dark {
+  padding: 50px 0;
+  color: var(--accent);
   background-color: var(--main);
-  width: 100vw;
 }
 
-.nav-item {
-  padding: 0px;
+.footer-dark h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
 }
 
-.text-body-secondary {
-  color: var(--accent) !important;
-  font-size: 15px;
-}
-
-@media (min-width: 768px) {
-  .container, .container-md, .container-sm {
-    max-width: 100vw;
+@media (max-width: 767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
   }
 }
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+}
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 979px) {
   .ag-services_item {
     flex-basis: calc(50% - 30px);
