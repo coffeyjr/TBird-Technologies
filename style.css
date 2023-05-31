@@ -151,6 +151,32 @@ main p {
 }
 
 /* LANDING-SERVICES SECTION STYLING!! */
+.service-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-services {
+  padding: 15px 30px;
+  background: none;
+  color: var(--main);
+  outline: none;
+  border: solid var(--main);
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 50%;
+  letter-spacing: 5px;
+}
+
+.cta-services:hover {
+  background: var(--main);
+  color: var(--cta);
+  border: solid var(--cta);
+  cursor: pointer;
+  transition: ease-in 0.25s;
+}
+
 .services {
   background: var(--accent);
   min-height: 100%;
@@ -172,7 +198,7 @@ main p {
 }
 
 body {
-  background-color: #000;
+  background-color: var(--cta);
 }
 
 .ag-services_box {
@@ -367,6 +393,20 @@ body {
   margin-bottom: 0;
 }
 
+.service-page {
+  height: 100vh;
+}
+.service-page p {
+  color: var(--main);
+}
+.service-page h4 {
+  color: var(--main);
+}
+
+.service-page .col-lg-4 {
+  padding-bottom: 20px !important;
+}
+
 @media only screen and (max-width: 979px) {
   .ag-services_item {
     flex-basis: calc(50% - 30px);
@@ -450,10 +490,49 @@ body {
     width: 90%;
     letter-spacing: 5px;
   }
+  .cta-services {
+    padding: 15px 30px;
+    background: none;
+    color: var(--main);
+    outline: none;
+    border: solid var(--main);
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 70%;
+    letter-spacing: 5px;
+  }
+  .service-button {
+    padding-bottom: 45px;
+    width: 100%;
+  }
+  .ag-services_box {
+    padding: 20px 0px;
+  }
+  #header {
+    padding-top: 30px;
+  }
   #header > h1 {
     text-align: center;
     font-size: 43px;
     color: var(--main);
+  }
+  .service-page #header > h1 {
+    text-align: center;
+    font-size: 43px;
+    color: var(--main);
+    padding-top: 60px;
+  }
+  .about-page #header > h1 {
+    text-align: center;
+    font-size: 43px;
+    color: var(--main);
+    padding-top: 60px;
+  }
+  .contact-page #header > h1 {
+    text-align: center;
+    font-size: 43px;
+    color: var(--main);
+    padding-top: 60px;
   }
   .demo-bg {
     padding-top: 0px;
