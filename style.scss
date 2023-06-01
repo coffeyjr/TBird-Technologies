@@ -403,21 +403,17 @@ body {
 
 
 // SERVICES PAGE ---------------------------------
-.service-page {
-  height: 100vh;
-
-  p {
-    color: var(--main);
-  }
-
-  h4 {
-    color: var(--main);
-  }
-
+.contact-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 65px;
 }
 
-.service-page .col-lg-4 {
-  padding-bottom: 20px !important;
+.services #header > p {
+  text-align: center;
+  font-size: 18px;
+  padding: 0px 400px;
 }
 
 // MEDIA QUERIES --------------------------------------------------------------
@@ -515,6 +511,7 @@ body {
         text-transform: uppercase;
         width: 90%;
         letter-spacing: 5px;
+        font-size: 10px;
     }
 
     .cta-services {
@@ -527,6 +524,7 @@ body {
       text-transform: uppercase;
       width: 70%;
       letter-spacing: 5px;
+      font-size: 12px;
     }
 
     .service-button {
@@ -548,11 +546,17 @@ body {
       color: var(--main);
     }
 
-    .service-page #header>h1{
+    .services #header>h1{
       text-align:center;
       font-size: 43px;
       color: var(--main);
       padding-top: 60px;
+    }
+
+    .services #header > p {
+      text-align: center;
+      font-size: 12px;
+      padding: 0px 30px;
     }
 
     .about-page #header>h1{

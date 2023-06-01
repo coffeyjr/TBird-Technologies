@@ -393,18 +393,17 @@ body {
   margin-bottom: 0;
 }
 
-.service-page {
-  height: 100vh;
-}
-.service-page p {
-  color: var(--main);
-}
-.service-page h4 {
-  color: var(--main);
+.contact-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 65px;
 }
 
-.service-page .col-lg-4 {
-  padding-bottom: 20px !important;
+.services #header > p {
+  text-align: center;
+  font-size: 18px;
+  padding: 0px 400px;
 }
 
 @media only screen and (max-width: 979px) {
@@ -489,6 +488,7 @@ body {
     text-transform: uppercase;
     width: 90%;
     letter-spacing: 5px;
+    font-size: 10px;
   }
   .cta-services {
     padding: 15px 30px;
@@ -500,6 +500,7 @@ body {
     text-transform: uppercase;
     width: 70%;
     letter-spacing: 5px;
+    font-size: 12px;
   }
   .service-button {
     padding-bottom: 45px;
@@ -516,11 +517,16 @@ body {
     font-size: 43px;
     color: var(--main);
   }
-  .service-page #header > h1 {
+  .services #header > h1 {
     text-align: center;
     font-size: 43px;
     color: var(--main);
     padding-top: 60px;
+  }
+  .services #header > p {
+    text-align: center;
+    font-size: 12px;
+    padding: 0px 30px;
   }
   .about-page #header > h1 {
     text-align: center;
