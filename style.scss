@@ -434,7 +434,7 @@ main p {
 
 
 
-// SERVICES PAGE ---------------------------------
+// SERVICES PAGE -------------------------------------------------------------------------------------------------------------------
 .contact-button {
   width: 100%;
   display: flex;
@@ -449,9 +449,59 @@ main p {
   color: var(--main);
 }
 
-//  CONTACT PAGE ---------------------------------------------
+// ABOUT PAGE ------------------------------------------------------------------------------------------------------------------------
+.about-page {
+  .col-md-6 {
+    padding: 40px;
 
-// MEDIA QUERIES --------------------------------------------------------------
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .col-4 {
+    .card {
+      border: none !important;
+    }
+
+    .col-md-3 {
+      display: flex;
+      align-items: center;
+      padding-right: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-page {
+    .col-md-6 {
+      padding: 20px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .col-4 {
+      .col-md-3 {
+        display: block;
+        padding-right: 0px;
+
+        i {
+          font-size: 3em;
+        }
+
+      }
+    }
+  }
+}
+
+
+
+//  CONTACT PAGE ---------------------------------------------------------------------------------------------------------------------
+
+// MEDIA QUERIES ---------------------------------------------------------------------------------------------------------------------
 
 @media only screen and (max-width: 979px) {
   .ag-services_item {
