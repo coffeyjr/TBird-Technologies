@@ -1,8 +1,20 @@
 :root {
-    --main: #27262d;
-    --accent: #FFFFFF;
-    --gradient: linear-gradient(90deg, rgba(63,61,72,1) 0%, rgba(47,46,53,1) 27%, rgba(39,38,45,1) 100%);
-    --cta: #41678A;
+  --main: #003744;
+  --accent: #F6F7EB;
+  --cta: #FDA856;
+
+  /* Gradient color palette */
+  /* --grad2: #FDA856;
+  --grad3: #f1ad43;
+  --grad4: #efa634;
+  --grad5: #ee9f24;
+  --grad6: #ed9914;
+  --grad7: #df8f11;
+  --grad8: #cf8510;
+  --grad9: #bf7b0f;
+  --grad10: #af700e;
+  --grad11: #a0660c;
+  --grad12: #905c0b; */
 }
 
 
@@ -86,7 +98,7 @@ li a:hover::after {
     display: block;
     height: 2px;
     width: 0;
-    background: var(--accent);
+    background: var(--main);
     transition: all .5s;
 }
 
@@ -104,7 +116,7 @@ li a:hover::after {
   #hamburger-icon div {
     width: 35px;
     height: 3px;
-    background-color: white;
+    background-color: var(--accent);
     margin: 6px 0;
     transition: 0.4s;
   }

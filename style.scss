@@ -1,8 +1,22 @@
 :root {
-    --main: #27262d;
-    --accent: #FFFFFF;
-    --gradient: linear-gradient(90deg, rgba(63,61,72,1) 0%, rgba(47,46,53,1) 27%, rgba(39,38,45,1) 100%);
-    --cta: #41678A;
+    --main: #003744;
+    --accent: #F6F7EB;
+    --cta: #FDA856;
+
+    --bg-grad: linear-gradient(40deg, rgba(253,168,86,1) 35%, rgba(0,55,68,1) 50%);
+
+    // Gradient color palette
+    // --grad2: #f2b453;
+    // --grad3: #f1ad43;
+    // --grad4: #efa634;
+    // --grad5: #ee9f24;
+    // --grad6: #ed9914;
+    // --grad7: #df8f11;
+    // --grad8: #cf8510;
+    // --grad9: #bf7b0f;
+    // --grad10: #af700e;
+    // --grad11: #a0660c;
+    // --grad12: #905c0b;
 }
 
 * {
@@ -137,8 +151,8 @@ main p {
 }
 
 .cta:hover{
-    background: var(--accent);
-    color: black;
+    background: var(--cta);
+    color: var(--main);
     border: solid var(--main);
     cursor: pointer;
     transition: ease-in 0.25s;
@@ -192,9 +206,6 @@ main p {
 
 }
 
-body {
-  background-color: var(--cta);
-}
 .ag-services_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,11 +231,12 @@ body {
 .ag-services-item_link {
   display: block;
   padding: 30px 20px;
-  background-color: var(--main);
+  background: var(--main);
 
   overflow: hidden;
 
   position: relative;
+  cursor: url(images/cursor.png), auto;
 }
 .ag-services-item_link:hover,
 .ag-services-item_link:hover .ag-services-item_date {
@@ -244,7 +256,7 @@ body {
 
   font-weight: bold;
   font-size: 30px;
-  color: #FFF;
+  color: var(--accent);
 
   z-index: 2;
   position: relative;
@@ -253,7 +265,7 @@ body {
 .ag-services-item_bg {
   height: 128px;
   width: 128px;
-  background-color: #4F7CAC;
+  background: var(--bg-grad);
 
   z-index: 1;
   position: absolute;
@@ -267,22 +279,41 @@ body {
   transition: all .5s ease;
 }
 
-.ag-services_item:nth-child(2n) .ag-services-item_bg {
-  background-color: #41678A;
-}
-.ag-services_item:nth-child(3n) .ag-services-item_bg {
-  background-color: #3A5C79;
-}
-.ag-services_item:nth-child(4n) .ag-services-item_bg {
-  background-color: #335167;
-}
-.ag-services_item:nth-child(5n) .ag-services-item_bg {
-  background-color: #3D596E;
-}
-.ag-services_item:nth-child(6n) .ag-services-item_bg {
-  background-color: #466175;
-}
+// Uncomment below if using gradient at all --------------------------
 
+// .ag-services_item:nth-child(2n) .ag-services-item_bg {
+//   background-color: var(--grad2);
+// }
+// .ag-services_item:nth-child(3n) .ag-services-item_bg {
+//   background-color: var(--grad3);
+// }
+// .ag-services_item:nth-child(4n) .ag-services-item_bg {
+//   background-color: var(--grad4);
+// }
+// .ag-services_item:nth-child(5n) .ag-services-item_bg {
+//   background-color: var(--grad5);
+// }
+// .ag-services_item:nth-child(6n) .ag-services-item_bg {
+//   background-color: var(--grad6);
+// }
+// .ag-services_item:nth-child(7n) .ag-services-item_bg {
+//   background-color: var(--grad7);
+// }
+// .ag-services_item:nth-child(8n) .ag-services-item_bg {
+//   background-color: var(--grad8);
+// }
+// .ag-services_item:nth-child(9n) .ag-services-item_bg {
+//   background-color: var(--grad9);
+// }
+// .ag-services_item:nth-child(10n) .ag-services-item_bg {
+//   background-color: var(--grad10);
+// }
+// .ag-services_item:nth-child(11n) .ag-services-item_bg {
+//   background-color: var(--grad11);
+// }
+// .ag-services_item:nth-child(12n) .ag-services-item_bg {
+//   background-color: var(--grad12);
+// }
 
 // HOURS SECTION STYLING ---------------------------------------
 
@@ -326,7 +357,7 @@ body {
   border-left: 4px solid var(--cta); 
   }
   .business-hours li {
-  color: #888;
+  color: var(--accent);
   line-height: 30px;
   border-bottom: 1px solid #333; 
   }
@@ -379,6 +410,7 @@ body {
 .footer-dark .item.text p {
   margin-bottom:0;
   font-size: 14px;
+  color: var(--accent);
 }
 
 .footer-dark .item.social {
@@ -414,7 +446,10 @@ body {
   text-align: center;
   font-size: 18px;
   padding: 0px 400px;
+  color: var(--main);
 }
+
+//  CONTACT PAGE ---------------------------------------------
 
 // MEDIA QUERIES --------------------------------------------------------------
 
