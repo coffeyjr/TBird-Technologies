@@ -648,6 +648,7 @@ main p {
     padding: 50px 0;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .cta {
     width: 62%;
@@ -655,4 +656,5 @@ main p {
   .services #header > p {
     padding: 0px 80px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
