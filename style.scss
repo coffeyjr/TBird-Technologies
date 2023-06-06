@@ -19,6 +19,11 @@
     // --grad12: #905c0b;
 }
 
+::selection {
+  color: var(--accent);
+  background-color: var(--cta);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -359,7 +364,7 @@ main p {
   .business-hours li {
   color: var(--accent);
   line-height: 30px;
-  border-bottom: 1px solid #333; 
+  border-bottom: 1px solid var(--accent); 
   }
   .business-hours li:last-child {
   border-bottom: none; 
@@ -382,6 +387,7 @@ main p {
   color:var(--accent);
   background-color: var(--main);
 }
+
 
 .footer-dark h3 {
   margin-top:0;
@@ -450,7 +456,13 @@ main p {
 }
 
 // ABOUT PAGE ------------------------------------------------------------------------------------------------------------------------
+
 .about-page {
+  background: var(--accent);
+}
+
+.about-page {
+  
   .col-md-6 {
     padding: 40px;
 
@@ -463,6 +475,7 @@ main p {
   .col-4 {
     .card {
       border: none !important;
+      background: var(--accent)
     }
 
     .col-md-3 {
@@ -500,6 +513,92 @@ main p {
 
 
 //  CONTACT PAGE ---------------------------------------------------------------------------------------------------------------------
+
+.contact-page {
+  background: var(--accent);
+}
+
+.contact-page {
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .footer-dark {
+    position: relative;
+    margin-top: -100px;
+    clear: both;
+
+  }
+
+  .col-md-6 {
+    padding: 40px;
+    width: 75%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .col-6 {
+    .card {
+      border: none !important;
+      background: var(--accent);
+    }
+
+    .mb-5{
+      width: 100%;
+    }
+
+    .col-md-3 {
+      display: flex;
+      align-items: center;
+      padding-right: 50px;
+    }
+  }
+
+  // #symbols {
+  //   padding-top: 80px !important;
+  //   padding-bottom: 80px !important;
+  // }
+
+  height: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .contact-page {
+
+    .footer-dark {
+      padding: 70px;
+    }
+
+    .col-md-6 {
+      padding: 20px;
+      width: 100dvw;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .col-6 {
+
+      width: 100%;
+
+      .col-md-3 {
+        display: block;
+        padding-right: 0px;
+
+        i {
+          font-size: 3em;
+        }
+
+      }
+    }
+  }
+}
 
 // MEDIA QUERIES ---------------------------------------------------------------------------------------------------------------------
 
@@ -546,6 +645,7 @@ main p {
 }
 
 /* MEDIA QUERIES */
+
 
 @media (max-width: 768px) {
     .containerr .nav {
@@ -684,5 +784,15 @@ main p {
     align-items: flex-start;
     flex-wrap: wrap;
     padding: 50px 0
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cta {
+    width: 62%;
+  }
+
+  .services #header > p {
+    padding: 0px 80px;
   }
 }
