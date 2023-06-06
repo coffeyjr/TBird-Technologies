@@ -480,6 +480,7 @@ main p {
   }
   .contact-page .col-6 {
     width: 100%;
+    margin-bottom: -60px;
   }
   .contact-page .col-6 .col-md-3 {
     display: block;
