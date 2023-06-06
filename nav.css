@@ -159,7 +159,9 @@ li a:hover::after {
     padding-top: 50px;;
   }
 
-
+  nav {
+    width: auto;
+  }
 
   
   @media only screen and (max-width: 768px) {
@@ -180,5 +182,23 @@ li a:hover::after {
     #brand img {
         width: 80px;
         padding-bottom: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 1440px) {
+    header {
+      width: 100%;
+    }
+
+    #brand {
+        padding-left: 15px;
+        padding-top: 20px;
+        width: 30%;
+    }
+
+    #brand img {
+        width: 80px;
+        padding-bottom: 20px;
+        margin-right: 0px;
     }
   }
